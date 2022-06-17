@@ -54,18 +54,24 @@ USERID=$UID docker-compose down
 
 Steps to implement the same:
 
-1: ```git clone https://github.com/aave/lens-protocol.git```
+1: ```bash
+git clone https://github.com/aave/lens-protocol.git```
 
-2: ```yarn or npm install```
+2: ```bash
+yarn or npm install```
 
-3: ```npm run compile```
+3: ``` bash
+npm run compile```
 
 starting the local blockchain 
-4:```npx hardhat node```
+
+4:```bash
+npx hardhat node```
 
 on a another terminal please deploy the full protocol
 
-5: ```npm run full-deploy-local```
+5: ```bash
+npm run full-deploy-local```
 
 ## Mint User Profile
 The Program can be find at LENS-PROTOCOL-MAIN/Tasks/create-profile.ts
@@ -74,7 +80,8 @@ The Program can be find at LENS-PROTOCOL-MAIN/Tasks/create-profile.ts
 
 This is the code overview of the Task.
 
-``npx hardhat create-profile --network localhost``
+``` bash
+npx hardhat create-profile --network localhost```
 
 The command to execute the create and mint a profile would be used like this after running and deploying the protocol in the local machine or if in a docker container than in the executing container.
 
@@ -88,7 +95,8 @@ The Program collect can be find at LENS-PROTOCOL-MAIN/Tasks/collect.ts
 
 This is the code overview of the Collect program which will enable the protocol to collect an nft and the following command need to be executed for collecting the nft
 
-``npx hardhat create-profile --network localhost``
+```bash
+npx hardhat create-profile --network localhost```
 
 
 
