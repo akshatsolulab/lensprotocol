@@ -9,69 +9,21 @@ The Lens Protocol is a decentralized, non-custodial social graph. Lens implement
 
 ## Setup
 
-> For now only Linux and macOS are known to work
->
-> We are now figuring out what works for Windows, instructions will be updated soon
->
-> (feel free to experiment and submit PR's)
-
-The environment is built using Docker Compose, note that your `.env` file must have the RPC URL of the network you want to use, and an optional `MNEMONIC` and `BLOCK_EXPLORER_KEY`, defined like so, assuming you choose to use Mumbai network:
-
-```
-MNEMONIC="MNEMONIC YOU WANT TO DERIVE WALLETS FROM HERE"
-MUMBAI_RPC_URL="YOUR RPC URL HERE"
-BLOCK_EXPLORER_KEY="YOUR BLOCK EXPLORER API KEY HERE"
-```
-
-With the environment file set up, you can move on to using Docker:
-
-```bash
-export USERID=$UID && docker-compose build && docker-compose run --name lens contracts-env bash
-```
-
-If you need additional terminals:
-
-```bash
-docker exec -it lens bash
-```
-
-From there, have fun!
-
-Here are a few self-explanatory scripts:
-
-```bash
-npm run test
-npm run coverage
-npm run compile
-```
-
-Cleanup leftover Docker containers:
-
-```bash
-USERID=$UID docker-compose down
-```
-
-
 Steps to implement the same:
 
-1: ```bash
-git clone https://github.com/aave/lens-protocol.git```
+1: ```git clone https://github.com/aave/lens-protocol.git```
 
-2: ```bash
-yarn or npm install```
+2: ```yarn or npm install```
 
-3: ``` bash
-npm run compile```
+3: ```npm run compile```
 
 starting the local blockchain 
 
-4:```bash
-npx hardhat node```
+4:```npx hardhat node```
 
 on a another terminal please deploy the full protocol
 
-5: ```bash
-npm run full-deploy-local```
+5: ```npm run full-deploy-local```
 
 ## Mint User Profile
 The Program can be find at LENS-PROTOCOL-MAIN/Tasks/create-profile.ts
@@ -80,8 +32,7 @@ The Program can be find at LENS-PROTOCOL-MAIN/Tasks/create-profile.ts
 
 This is the code overview of the Task.
 
-``` bash
-npx hardhat create-profile --network localhost```
+``npx hardhat create-profile --network localhost``
 
 The command to execute the create and mint a profile would be used like this after running and deploying the protocol in the local machine or if in a docker container than in the executing container.
 
@@ -95,8 +46,7 @@ The Program collect can be find at LENS-PROTOCOL-MAIN/Tasks/collect.ts
 
 This is the code overview of the Collect program which will enable the protocol to collect an nft and the following command need to be executed for collecting the nft
 
-```bash
-npx hardhat create-profile --network localhost```
+``npx hardhat create-profile --network localhost``
 
 
 
