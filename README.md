@@ -46,7 +46,7 @@ The Program collect can be find at LENS-PROTOCOL-MAIN/Tasks/collect.ts
 
 This is the code overview of the Collect program which will enable the protocol to collect an nft and the following command need to be executed for collecting the nft
 
-``npx hardhat create-profile --network localhost``
+``npx hardhat collect --network localhost``
 
 
 
