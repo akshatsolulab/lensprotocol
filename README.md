@@ -11,7 +11,7 @@ The Lens Protocol is a decentralized, non-custodial social graph. Lens implement
 
 Steps to implement the same:
 
-1: ```git clone https://github.com/aave/lens-protocol.git](https://github.com/akshatsolulab/lensprotocol.git```
+1: ```git clone https://github.com/akshatsolulab/lensprotocol.git```
 
 2: ```yarn or npm install```
 
